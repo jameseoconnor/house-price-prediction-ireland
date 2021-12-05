@@ -62,19 +62,14 @@ The dataset for the model was gathered using a popular website in Ireland on the
 
 There are a number of categorical, discrete and continuous variables in the dataset. Categorical variables can be used as input variables to solve linear regression problems by adding a new vector for each category, however, for simplicity the categorical variables (districtarea, , county, ber\_classification and property\_type) were removed from the dataset.
 
-|
+
  | **longitude** | **latitude** | **bathrooms** | **beds** | **surface\_area** | **price** |
-|
+| --- | --- | --- | --- | --- | --- | 
  | -6.237561 | 52.646088 | 1 | 2 | 68.63 | **149000** |
-|
  | -6.935998 | 52.404472 | 2 | 4 | 105 | **192000** |
-|
  | -6.944524 | 52.392443 | 1 | 2 | 45 | **65000** |
-|
  | -6.454622 | 52.332995 | 1 | 2 | 60.73 | **130000** |
-|
  | -6.946246 | 52.331056 | 2 | 4 | 160.3 | **299950** |
-|
  | -6.793841 | 52.519084 | 2 | 3 | 170 | **375000** |
 
 **Table 2: Reduced features from Figure 1**
@@ -85,18 +80,13 @@ The next step is to consider the coefficients of each of these input variables, 
 
 
  | **longitude** | **latitude** | **bed\_bath** | **surface\_area** | **price** |
-|
- | 1 | -6.237561 | 52.646088 | 3 | 68.63 | **149000** |
-|
- | 1 | -6.935998 | 52.404472 | 6 | 105 | **192000** |
-|
- | 1 | -6.944524 | 52.392443 | 3 | 45 | **65000** |
-|
- | 1 | -6.454622 | 52.332995 | 3 | 60.73 | **130000** |
-|
- | 1 | -6.946246 | 52.331056 | 6 | 160.3 | **299950** |
-|
- | 1 | -6.793841 | 52.519084 | 5 | 170 | **375000** |
+ | --- | --- | --- | --- | --- |
+ | -6.237561 | 52.646088 | 3 | 68.63 | **149000** |
+ | -6.935998 | 52.404472 | 6 | 105 | **192000** |
+ | -6.944524 | 52.392443 | 3 | 45 | **65000** |
+ | -6.454622 | 52.332995 | 3 | 60.73 | **130000** |
+ | -6.946246 | 52.331056 | 6 | 160.3 | **299950** |
+ | -6.793841 | 52.519084 | 5 | 170 | **375000** |
 
 **Table 3: Dataset adjusted to use normal equation**
 
